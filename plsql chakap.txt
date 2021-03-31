@@ -1,0 +1,671 @@
+
+------------------------
+-----------SETTING MAIN TABLE-------------
+CREATE TABLE covidInfo (
+cName VARCHAR2(50),
+totalCases NUMBER(10),
+totalDeaths NUMBER(10),
+totalRecovered NUMBER(10),
+totalSerious NUMBER(10)
+
+);
+
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('USA',30922914,562069,23348808,8592);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Brazil',12490362,310694,10879627,8318);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('India',11987860,161715,11330279,8944);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Russia',4519832,97740,4139128,2300);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('France',4508575,94465,289350,4791);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('UK',4333042,126592,3805416,615);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Italy',3532057,107933,2850889,3679);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Spain',3255324,75010,3016247,1830);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Turkey',3179115,30923,2939929,1886);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Germany',2776004,76419,2484600,3209);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Colombia',2375591,62790,2261373,1982);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Argentina',2301389,55368,2072228,3506);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Poland',2250991,51884,1798922,2894);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Mexico',2224767,201429,1759123,4798);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Iran',1855674,62397,1593219,3920);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Ukraine',1644063,31954,1300625,177);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('South Africa',1544466,52648,1471164,546);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Peru',1520973,51238,1432450,2301);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Czechia',1515029,25874,1315571,1800);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Indonesia',1496085,40449,1331400,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Netherlands',1252437,16465,null,646);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Chile',977243,22754,912058,2539);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Canada',964448,22873,898444,661);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Romania',936618,23114,837060,1386);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Belgium',866063,22870,56371,667);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Iraq',832428,14212,745935,492);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Israel',831897,6180,815721,458);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Portugal',820407,16837,775391,142);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Sweden',780018,13402,null,284);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Philippines',721892,13170,603154,785);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Pakistan',654591,14215,595929,3043);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Hungary',633861,19972,395790,1527);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bangladesh',595714,8904,535641,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Switzerland',592217,10299,542535,159);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Serbia',585506,5190,488992,269);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Jordan',582133,6472,476090,729);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Austria',536465,9256,491619,519);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Morocco',494358,8798,482084,262);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Japan',466849,9031,441237,341);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Lebanon',458338,6058,360244,978);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('UAE',455197,1481,438706,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Saudi Arabia',388325,6650,376947,638);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Slovakia',357910,9496,255300,662);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Panama',353497,6090,342379,105);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Malaysia',341944,1255,326309,169);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bulgaria',327770,12650,248904,769);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Ecuador',322699,16679,271847,534);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Belarus',318681,2219,309535,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Georgia',280301,3751,272219,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Nepal',276839,3027,272530,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bolivia',269302,12165,217921,71);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Croatia',267222,5893,251237,121); 
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Azerbaijan',256201,3491,236151,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Greece',254031,7880,214527,728);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Dominican Republic',251983,3304,211044,151);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Tunisia',249703,8705,215195,281);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Kazakhstan',240381,2994,216380,221);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Palestine',236462,2581,210340,197);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Ireland',233937,4653,23364,65);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Denmark',228013,2414,216590,43);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Kuwait',227178,1279,211360,250);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Moldova',226521,4827,201769,339);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Costa Rica',215178,2931,191707,155);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Lithuania',213941,3551,197618,128);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Slovenia',212678,4018,196319,106);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Paraguay',206597,4003,169197,423);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Egypt',199364,11845,152642,90);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Ethiopia',198794,2784,153236,769);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Guatemala',193050,6794,174980,5);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Armenia',190317,3464,171506,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Honduras',187015,4557,71384,464);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Qatar',177774,284,162910,279);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Nigeria',162489,2041,150205,10);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bosnia and Herzegovina',162032,6220,128241,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Libya',156849,2618,144964,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Oman',156087,1661,142420,145);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Venezuela',155663,1555,144229,162);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Myanmar',142385,3206,131789,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bahrain',140818,513,132455,54);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Kenya',130214,2117,91754,121);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('North Macedonia',126230,3642,104345,124);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Albania',123641,2204,88899,46);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Algeria',116750,3077,81242,20);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Estonia',103630,868,77270,69);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('S. Korea',101757,1722,93855,104);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Latvia',101040,1878,92014,69);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Uruguay',95278,901,76030,273);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Norway',92858,656,74332,46);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Sri Lanka',92007,559,88623,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Ghana',90287,740,87137,40);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('China',90167,4636,85364,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Montenegro',90083,1245,81936,69);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Kyrgyzstan',88092,1495,84600,16);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Zambia',87872,1200,84347,90);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Uzbekistan',82340,626,80523,23);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Finland',76003,817,46000,59);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Cuba',72503,415,68499,65);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Mozambique',67011,762,55167,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('El Salvador',63766,1998,61009,35);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Luxembourg',60755,738,56318,21);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Singapore',60300,30,60113,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Afghanistan',56322,2472,50013,1108);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Cameroon',47669,721,35261,53);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Cyprus',44305,250,2057,51);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Namibia',43499,508,41292,37);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Ivory Coast',42861,232,38590,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Uganda',40767,335,40379,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Senegal',38520,1037,36753,33);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Botswana',38466,506,33903,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Jamaica',38227,570,17197,44);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Zimbabwe',36818,1519,34575,13);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Malawi',33458,1113,29585,33);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Sudan',29661,2028,23990,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Australia',29255,909,26269,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Malta',28875,387,27086,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Thailand',28734,94,27239,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('DRC',27930,739,25398,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Madagascar',23585,387,21636,26);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Maldives',23403,66,20618,103);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Angola',22031,533,20269,15);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Rwanda',21370,301,19741,7);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Guinea',19670,120,16425,24);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Mayotte',19306,154,2964,16);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Gabon',18777,111,16074,27);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('French Polynesia',18607,141,4842,2);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Syria',18356,1227,12257,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Mauritania',17756,448,16989,14);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Eswatini',17318,666,16389,6);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Cabo Verde',17018,165,16050,23);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('French Guiana',16922,89,9995,6);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Réunion',15561,102,14064,57);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Tajikistan',13308,90,13218,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Haiti',12736,251,10754,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Burkina Faso',12673,145,12330,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Belize',12415,317,12061,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Andorra',11850,115,11204,12);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Hong Kong',11447,205,11040,10);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Guadeloupe',11298,165,2242,8);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Somalia',10838,488,4678,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Lesotho',10686,315,4438,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('South Sudan',10098,108,9454,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Guyana',10072,225,8842,13);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Togo',9827,107,7699,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Mali',9773,376,6763,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Congo',9681,135,8208,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Aruba',9214,82,8455,8);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Suriname',9095,177,8577,5);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bahamas',8935,188,7757,3);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Trinidad and Tobago',7954,142,7590,13);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Martinique',7710,49,98,5);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Curaçao',7335,30,5071,38);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Djibouti',7249,66,6250,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Benin',7100,90,6452,35);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Mongolia',7014,6,4341,34);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Equatorial Guinea',6902,102,6486,10);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Nicaragua',6629,177,4225,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Iceland',6163,29,6039,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Gambia',5401,163,5030,3);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Papua New Guinea',5184,45,846,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('CAR',5088,64,4957,2);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Niger',4987,185,4586,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('San Marino',4603,84,4000,9);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Chad',4501,160,4099,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Gibraltar',4273,94,4167,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Saint Lucia',4191,58,4099,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Seychelles',4084,20,3548,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Channel Islands',4046,86,3960,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Yemen',4033,851,1606,23);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Sierra Leone',3962,79,2800,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Comoros',3690,146,3510,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Guinea-Bissau',3630,61,2930,16);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Barbados',3609,41,3422,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Eritrea',3208,9,2970,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Liechtenstein',2658,56,2553,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Burundi',2657,6,773,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Vietnam',2591,35,2308,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('New Zealand',2482,26,2381,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Turks and Caicos',2326,17,2201,4);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Monaco',2254,28,2057,9);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Cambodia',2233,10,1166,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Sao Tome and Principe',2212,34,2058,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Sint Maarten',2130,27,2073,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Liberia',2042,85,1899,2);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('St. Vincent Grenadines',1738,10,1587,2);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Saint Martin',1619,12,1399,7);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Isle of Man',1555,27,977,12);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Caribbean Netherlands',1300,10,885,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Antigua and Barbuda',1128,28,784,45);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bermuda',1028,12,722,1);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Taiwan',1022,10,979,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Mauritius',920,10,629,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Bhutan',872,1,867,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('St. Barth',775,1,462,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Diamond Princess',712,13,699,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Faeroe Islands',661,1,660,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Tanzania',509,21,183,7);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Timor-Leste',491,null,169,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Cayman Islands',487,2,462,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Wallis and Futuna',374,4,44,4);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Brunei',206,3,188,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Dominica',161,null,153,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Grenada',155,1,152,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('British Virgin Islands',153,1,131,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('New Caledonia',121,null,58,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Fiji',67,2,64,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Falkland Islands',54,null,54,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Laos',49,null,45,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Macao',48,null,48,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Saint Kitts and Nevis',44,null,42,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Greenland',31,null,31,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Vatican City',27,null,15,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Saint Pierre Miquelon',24,null,24,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Anguilla',22,null,20,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Montserrat',20,1,19,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Solomon Islands',18,null,16,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Western Sahara',10,1,8,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('MS Zaandam',9,2,7,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Marshall Islands',4,null,4,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Samoa',3,null,2,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Vanuatu',3,null,1,null);
+insert into covidInfo(cName, totalCases, totalDeaths, totalRecovered, totalSerious) values('Micronesia',1,null,1,null);
+
+
+-------------------------------
+--------------- NEW TABLE---------------
+-------------------------------
+CREATE TABLE newcovidInfo(
+cName VARCHAR2(100),
+newCases NUMBER(20),
+newDeaths NUMBER(20)
+);
+-------------------------------------------------------------
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('USA', 5772, 56);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Brazil', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('India', 16856, 129); 
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Russia', 9088, 336);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('France', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('UK', 3862, 19);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Italy', 19611, 297);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Spain', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Turkey', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Germany', 3310, 15);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Colombia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Argentina', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Poland', 29253, 131);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Mexico', 4922, 567);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Iran', 8751, 89);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Ukraine', 11932, 203);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('South Africa', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Peru', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Czechia', 3955, 38);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Indonesia', 4083, 85);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Netherlands', 7430, 15);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Chile', 7330, 101);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Canada', 3365, 21);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Romania', 4439, 117);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Belgium', 5332, 18);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Iraq', 5271, 35);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Israel', 514, 15);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Portugal', 365, 10);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Sweden', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Philippines', 9475, 11);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Pakistan', 4767, 57);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Hungary', 9082, 220);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bangladesh', 3908, 35);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Switzerland', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Serbia', 3889, 39);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Jordan', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Austria', 2679, 25);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Morocco', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Japan', 1983, 33);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Lebanon', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('UAE', 2128, 4);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Saudi Arabia', 531, 7);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Slovakia', 925, 70);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Panama', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Malaysia', 1302, 4);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bulgaria', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Ecuador', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Belarus', 1050, 8);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Georgia', 365, 5);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Nepal', 89, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bolivia', 591, 22);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Croatia', 1321, 21);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Azerbaijan', 1831, 27);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Greece', 1441, 54);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Dominican Republic', 401, 2);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Tunisia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Kazakhstan', 1596, 14);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Palestine', 1714, 24);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Ireland', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Denmark', 964, 1);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Kuwait', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Moldova', 861, 42);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Costa Rica', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Lithuania', 412, 12);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Slovenia', 640, 7);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Paraguay', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Egypt', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Ethiopia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Guatemala', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Armenia', 777, 14);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Honduras', 678, 21);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Qatar', 639, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Nigeria', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bosnia and Herzegovina', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Libya', 733, 16);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Oman', 2249, 11);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Venezuela', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Myanmar', 8, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bahrain', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Kenya', 884, 13);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('North Macedonia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Albania', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Algeria', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Estonia', 892, 8);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('S. Korea', 482, 1);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Latvia', 324, 6);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Uruguay', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Norway', 462, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Sri Lanka', 168, 1);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Ghana', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('China', 8, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Montenegro', 351, 4);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Kyrgyzstan', 146, 1);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Zambia', 145, 2);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Uzbekistan', 194, 1);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Finland', 458, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Cuba', 919, 1);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Mozambique', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('El Salvador', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Luxembourg', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Singapore', 12, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Afghanistan', 28, 2);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Cameroon', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Cyprus', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Namibia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Ivory Coast', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Uganda', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Senegal', 64, 3);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Botswana', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Jamaica', 480, 4);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Zimbabwe', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Malawi', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Sudan', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Australia', 6, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Malta', 67, 2);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Thailand', 77, 1);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('DRC', 43, 5);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Madagascar', 161, 6);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Maldives', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Angola', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Rwanda', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Guinea', 169, 4);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Mayotte', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Gabon', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('French Polynesia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Syria', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Mauritania', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Eswatini', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Cabo Verde', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('French Guiana', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Réunion', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Tajikistan', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Haiti', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Burkina Faso', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Belize', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Andorra', 41, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Hong Kong', 1, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Guadeloupe', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Somalia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Lesotho', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('South Sudan', 19, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Guyana', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Togo', 151, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Mali', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Congo', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Aruba', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Suriname', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bahamas', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Trinidad and Tobago', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Martinique', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Curaçao', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Djibouti', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Benin', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Mongolia', 321, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Equatorial Guinea', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Nicaragua', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Iceland', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Gambia', 36, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Papua New Guinea', 524, 6);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('CAR', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Niger', 15, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('San Marino', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Chad', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Gibraltar', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Saint Lucia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Seychelles', 88, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Channel Islands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Yemen', 64, 19);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Sierra Leone', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Comoros', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Guinea-Bissau', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Barbados', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Eritrea', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Liechtenstein', 9, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Burundi', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Vietnam', 5, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('New Zealand', 1, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Turks and Caicos', 1, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Monaco', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Cambodia', 86, 2);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Sao Tome and Principe', 2, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Sint Maarten', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Liberia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('St. Vincent Grenadines', 15, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Saint Martin', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Isle of Man', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Caribbean Netherlands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Antigua and Barbuda', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bermuda', 81, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Taiwan', 2, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Mauritius', 20, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Bhutan', 1, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('St. Barth', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Diamond Princess', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Faeroe Islands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Tanzania', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Timor-Leste', 11, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Cayman Islands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Wallis and Futuna', 7, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Brunei', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Dominica', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Grenada', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('British Virgin Islands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('New Caledonia', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Fiji', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Falkland Islands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Laos', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Macao', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Saint Kitts and Nevis', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Greenland', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Vatican City', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Saint Pierre Miquelon', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Anguilla', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Montserrat', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Solomon Islands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Western Sahara', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('MS Zaandam', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Marshall Islands', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Samoa', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Vanuatu', 0, 0);
+INSERT INTO newcovidInfo(cName,newCases, newDeaths) VALUES('Micronesia', 0, 0);
+
+
+-----------------------------------
+-------------------------------- UPDATING RECORDS---------------
+------------------------------------------------------------------
+-------------PROCEDURE TO UPDATE THE MAIN TABLE WITH NEWRECORDS--------------------
+CREATE OR REPLACE PROCEDURE updatecovidInfo(nCases NUMBER,dCases NUMBER,rCases NUMBER ,sCases NUMBER, country VARCHAR)
+AS
+viewCreation VARCHAR2(255);
+BEGIN
+execute immediate 'CREATE OR REPLACE VIEW vw_newdata as
+select row_number() over (order by cName) ids,cName,newCases,newDeaths from newcovidInfo
+where upper(cName)='|| country ||';';
+UPDATE covidInfo
+SET totalCases= totalCases+ nCases , totalDeaths= totalDeaths+dCases, totalRecovered= totalRecovered+rCases, totalSerious= totalSerious + sCases
+WHERE UPPER(cName)= country;
+
+UPDATE newcovidInfo
+SET newCases= nCases, newDeaths=dCases
+WHERE UPPER(cName)= country;
+
+END updatecovidInfo;
+--exec updatecovidInfo(222,222,222,222,'USA');
+--
+
+create or replace type obj_record_cases is object (
+  case_type varchar2(255),
+  case_count number
+);
+/
+create or replace type tbl_record_cases is table of obj_record_cases;
+/
+
+CREATE OR REPLACE FUNCTION totalFinder
+RETURN tbl_record_cases
+IS
+NEW_DATA tbl_record_cases := tbl_record_cases();
+BEGIN
+NEW_DATA.EXTEND(12);
+NEW_DATA(1) := obj_record_cases('Total Cases:',totalSerious());
+
+NEW_DATA(2) := obj_record_cases('Total Deaths:',totalDeaths());
+
+NEW_DATA(3) := obj_record_cases('Total Recovered:',totalRecovered());
+
+NEW_DATA(4) := obj_record_cases('Total Active Cases:',totalCases()-totalDeaths()-totalRecovered());
+
+NEW_DATA(5) := obj_record_cases('Total Serious Cases:',totalSerious());
+
+NEW_DATA(6) := obj_record_cases('Serious Cases Percentage:',ROUND((totalSerious()/(totalCases()-totalDeaths()-totalRecovered()))*100,1));
+
+NEW_DATA(7) := obj_record_cases('Serious Cases:',totalCases()-totalDeaths()-totalRecovered()-totalSerious());
+
+NEW_DATA(8) := obj_record_cases('Death Percentage:',ROUND((totalCases()-totalDeaths()-totalRecovered()-totalSerious())/(totalCases()-totalDeaths()-totalRecovered())*100,1));
+
+NEW_DATA(9) := obj_record_cases('Recovered Cases Percentage:',Round(totalRecovered()/(totalDeaths()+totalRecovered())*100) );
+
+NEW_DATA(10) := obj_record_cases('Mild Cases:',totalCases()-totalDeaths()-totalRecovered()-totalSerious() );
+
+NEW_DATA(11) := obj_record_cases('Mild Cases Percentage:',ROUND((totalCases()-totalDeaths()-totalRecovered()-totalSerious())/(totalCases()-totalDeaths()-totalRecovered())*100,1) );
+
+NEW_DATA(12) := obj_record_cases('Position:',rankFinder('NEPAL') );
+
+return NEW_DATA;
+END totalFinder;
+
+select * from table(totalFinder);
+
+
+-----------------------------------
+-------------------------------- VIEWS SQL---------------
+------------------------------------------------------------------
+create or replace view vw_bot20 as 
+select ids, cName,totalCases from(
+select row_number() over (order by totalCases desc) ids, cName, totalCases
+from covidInfo)
+where ids <21; 
+
+
+
+create or replace view vw_top20 as 
+select ids,cName,totalCases from (select row_number() over (order by totalCases asc) ids, cName, totalCases
+from covidInfo)
+where ids<21;
+
+
+
+--
+--select * from table(totalFinder);
+
+create or replace view totalNum as
+select row_number() over ( order by case_count asc) ids,case_type,case_count from table(totalFinder);
+
+CREATE OR REPLACE VIEW newdata as
+select row_number() over (order by cName) ids,cName,newCases,newDeaths from newcovidInfo
+where upper(cName)='NEPAL';
+
+
+
+-------FINAL QUERY----------
+select vw_bot20.cName,vw_bot20.totalCases, vw_top20.cName,vw_top20.totalCases,totalNum.case_type,totalNum.case_count,vw_newdata.cName,vw_newdata.newCases,vw_newdata.newDeaths
+from vw_bot20   join vw_top20
+on vw_bot20.ids = vw_top20.ids 
+ left join totalNum
+on
+vw_top20.ids= totalNum.ids
+left join newdata
+on
+vw_top20.ids=vw_newdata.ids;
+
+
+----------------------------------------------------------------------------
+-------------------------------- FIND RANK--------------------------------------
+--------------------------------------------------------------------------
+
+------- Functions to find rank of the Country -------
+CREATE OR REPLACE FUNCTION rankFinder(countryName VARCHAR2)
+RETURN VARCHAR2
+IS
+pos NUMBER(5);
+BEGIN
+SELECT cpos INTO pos FROM (
+SELECT ci.*, DENSE_RANK() OVER(ORDER BY totalCases DESC) cpos
+from covidInfo ci
+)
+where UPPER(cName)= countryName;
+RETURN pos;
+END rankFinder;
+/
+
+SELECT rankFinder('USA') AS POSITION FROM DUAL;
+
+------- FUNCTION TO FIND TOTALCASES -------------
+CREATE OR REPLACE FUNCTION totalCases
+RETURN NUMBER
+AS
+totalCases NUMBER(20);
+results   varchar2(255);
+BEGIN
+SELECT SUM(ci.totalCases) into totalCases
+FROM covidInfo ci;
+results:= totalCases;
+RETURN results ;
+END totalCases;
+
+------- FUNCTION TO FIND TOTAL DEATHS-------------
+CREATE OR REPLACE FUNCTION totalDeaths
+RETURN NUMBER
+AS
+totalDeaths NUMBER(20);
+results   varchar2(255);
+BEGIN
+-----------------------------
+SELECT SUM(ci.totalDeaths) into totalDeaths
+FROM covidInfo ci;
+-----------------------------
+results:= totalDeaths;
+RETURN results ;
+END totalDeaths;
+
+
+
+-----FUNCTION TO FIND TOTAL RECOVERED CASES -------------
+CREATE OR REPLACE FUNCTION totalRecovered
+RETURN NUMBER
+AS
+totalRecovered NUMBER(20);
+results   varchar2(255);
+BEGIN
+SELECT SUM(ci.totalRecovered) into totalRecovered
+FROM covidInfo ci;
+-----------------------------
+results:= totalRecovered;
+RETURN results ;
+END totalRecovered;
+
+-----FUNCTION TO FIND TOTAL SERIOUS CASES-------------
+CREATE OR REPLACE FUNCTION totalSerious
+RETURN NUMBER
+AS
+totalSerious  NUMBER(20);
+results   varchar2(255);
+BEGIN
+SELECT SUM(ci.totalSerious) into totalSerious
+FROM covidInfo ci;
+results:= totalSerious;
+RETURN results ;
+END totalSerious;
+
+SELECT totalCases as "Total Cases" ,
+totalDeaths as "Total Deaths"  ,
+totalRecovered "Total Recovered Cases",
+totalCases-totalDeaths-totalRecovered as ACTIVE_CASES,
+totalSerious as "Total Serious",
+ROUND((totalSerious/(totalCases-totalDeaths-totalRecovered))*100,1) AS SERIOUS_PERCENTAGE,
+totalCases-totalDeaths-totalRecovered-totalSerious AS MILD_CASES,
+ROUND((totalCases-totalDeaths-totalRecovered-totalSerious)/(totalCases-totalDeaths-totalRecovered)*100,1) AS MILD_CASES_PERCENTAGE,
+totalDeaths+totalRecovered as Closed_Cases,
+Round(totalDeaths/(totalDeaths+totalRecovered)*100) as DEATHS_PERCENTAGE,
+Round(totalRecovered/(totalDeaths+totalRecovered)*100) as RECOVERED_PERCENTAGE,
+rankFinder('NEPAL') "POSITION OF NEPAL" from dual;
+
+
+
+---------------------------------------------------------------------
+
