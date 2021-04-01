@@ -1,0 +1,140 @@
+select * from tbl_coronavirus;
+select * from newCovidInfo;
+--CREATE VIEW FOR TOP 20 COUNTRIES
+create or replace view vw_top_20 as 
+select c_position, country_name, total_cases from(
+select row_number() over (order by total_cases desc) c_position, country_name, total_cases
+from tbl_coronavirus)
+where c_position <21; 
+
+select * from vw_top_20;
+
+--CREATE VIEW FOR BOTTOM 20 COUNTIRES
+create or replace view vw_bottom_20 as 
+select c_position, country_name, total_cases from (select row_number() over (order by total_cases asc) c_position, country_name, total_cases
+from tbl_coronavirus)
+where c_position<21;
+
+select * from vw_bottom_20;
+---------------------------
+
+-- FOR NEPAL
+-- RANK FINDER
+CREATE OR REPLACE FUNCTION rankFinder(countryName VARCHAR2)
+RETURN VARCHAR2
+IS
+pos NUMBER(5);
+BEGIN
+SELECT cpos INTO pos FROM (
+SELECT ci.*, DENSE_RANK() OVER(ORDER BY total_cases DESC) cpos
+from tbl_coronavirus ci
+)
+where UPPER(country_name)= countryName;
+RETURN pos;
+END rankFinder;
+/
+
+CREATE OR REPLACE VIEW vw_newdata as
+select  'NEPAL Position:'|| ''||rankFinder('NEPAL') ||' Total:'||ci.total_cases ||' New:'|| nc.newCases ||' Total Deaths:'||ci.deaths ||' New Deaths:'|| nc.newDeaths nepaldata from newcovidInfo nc
+inner join tbl_coronavirus ci
+on
+nc.cName = ci.country_name
+where upper(nc.cName)='NEPAL';
+
+
+select * from vw_newdata;
+-----------------------
+------------------------------------------------------
+
+select 
+    vt.country_name "Top 20", vt.total_cases " ",  
+    null, null,
+    e.E1,f.F1, g.G1,i.H1,
+    null,
+    k.J1, 
+    null, null,
+    l.M1, m.N1, n.O1,
+    null, null,
+    vb.country_name "Bottom 20", vb.total_cases " "
+from vw_top_20 vt 
+join vw_bottom_20 vb 
+on vt.c_position = vb.c_position
+
+
+left join (
+    select 2 sn, 'Total Case:' E1 from dual
+    union
+    select 3, ''|| sum(total_cases) from tbl_coronavirus
+    union
+    select 9, 'Active' from dual
+    union
+    select 10, 'Cases' from dual
+) e on vt.c_position=e.sn 
+
+left join (
+    select 14 sn, ''|| (sum(total_cases) - sum(recovered) - sum(deaths) - sum(serious))||'('|| round((sum(total_cases) - sum(recovered) - sum(deaths) - sum(serious)) * 100 / ((sum(total_cases) - sum(recovered) - sum(deaths))), 1) ||'%)' F1 from tbl_coronavirus
+    union
+    select 15, 'in Mild Condition' from dual
+    union
+    select 19, nepaldata from vw_newdata
+)  f on vt.c_position= f.sn
+
+left join (
+    select 10 sn, ''|| (sum(total_cases) - sum(recovered) - sum(deaths)) G1 from tbl_coronavirus
+    union
+    select 11, 'Currently Infected Patients' from dual
+) g on vt.c_position= g.sn
+
+left join (
+    select 14 sn, ''|| sum(serious) ||'('||  round(sum(serious) * 100 / ((sum(total_cases) - sum(recovered) - sum(deaths))), 1) ||'%)' H1 from tbl_coronavirus
+    union
+    select 15, 'Serious or Critical' from dual
+) i on vt.c_position= i.sn
+
+left join (
+    select 2 sn, 'Deaths:' J1 from dual
+    union
+    select 3, ''|| sum(deaths) from tbl_coronavirus
+) k on vt.c_position= k.sn
+
+left join (
+    select 14 sn, ''|| sum(recovered) ||'('|| round(sum(recovered)*100 / (sum(deaths) + sum(recovered)), 1)  ||'%)' M1 from tbl_coronavirus
+    union
+    select 15, 'Recovered/Discharged' from dual
+) l on vt.c_position= l.sn
+
+left join (
+    select 2 sn, 'Recovered:' N1 from dual
+    union
+    select 3, ''|| sum(recovered) from tbl_coronavirus
+    union
+    select 8, 'Closed Cases' from dual
+    union
+    select 10, ''|| (sum(deaths) + sum(recovered)) from tbl_coronavirus
+    union
+    select 11, 'Cases which had an outcome' from dual
+) m on vt.c_position=m.sn 
+
+left join (
+    select 14 sn, ''|| sum(deaths) ||'('|| round(sum(deaths)*100 / (sum(deaths) + sum(recovered)), 1) || '%)' O1 from tbl_coronavirus
+    union
+    select 15, 'Deaths' from dual
+) n on vt.c_position= n.sn
+order by vt.c_position;
+
+
+---- UPDATE INFO
+CREATE OR REPLACE PROCEDURE updatecovidInfo(nCases NUMBER,dCases NUMBER,rCases NUMBER ,sCases NUMBER, country VARCHAR)
+AS
+viewCreation VARCHAR2(255);
+BEGIN
+UPDATE tbl_coronavirus
+SET total_cases= total_cases+ nCases , deaths= deaths+dCases, recovered= rCases, serious= sCases
+WHERE UPPER(country_name)= country;
+UPDATE newcovidInfo
+SET newCases= nCases, newDeaths=dCases
+WHERE UPPER(cName)= country;
+END updatecovidInfo;
+
+
+Exec updatecovidInfo(0,0,0,0,'NEPAL');
